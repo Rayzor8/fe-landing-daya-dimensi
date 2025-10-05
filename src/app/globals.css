@@ -6,6 +6,7 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-primary: var(--destructive);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -41,8 +42,9 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
-
-  
+  --text-var-lg: var(--text-theme-lg);
+  --text-var-md: var(--text-theme-md);
+  --color-red-primary: #B92322; 
 }
 
 :root {
@@ -78,6 +80,8 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  --text-theme-lg: 42px;
+  --text-theme-md: 24px;
 }
 
 .dark {
@@ -119,7 +123,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground w-full min-h-screen;
   }
 }
 
+@layer components {
+  .wrapper {
+    @apply p-10 lg:p-24 mx-auto ;
+  }
+}

@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { Button } from "../ui/button";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -77,17 +78,18 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button - Only visible below lg */}
-          <button
+          <Button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className={`lg:hidden p-2 rounded-md transition-colors ${
+            variant="ghost"
+            className={`lg:hidden rounded-md transition-colors ${
               isScrolled
                 ? "text-gray-900 hover:bg-gray-100"
                 : "text-white hover:bg-white/10"
             }`}
             aria-label="Toggle menu"
           >
-            {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </Button>
         </div>
       </div>
 
