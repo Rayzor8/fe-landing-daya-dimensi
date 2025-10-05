@@ -1,7 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import {  Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -63,17 +64,17 @@ const Navbar = () => {
           {/* Desktop Navigation - Visible on lg and above */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-light transition-colors whitespace-nowrap ${
+                className={`text-sm font-light transition-colors whitespace-nowrap cursor-pointer ${
                   isScrolled
                     ? "text-gray-700 hover:text-red-600"
                     : "text-white hover:text-red-300"
                 }`}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
 

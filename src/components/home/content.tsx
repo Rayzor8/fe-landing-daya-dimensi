@@ -25,7 +25,7 @@ export default function HomeContent() {
         </div>
 
         {/* cards */}
-        <div className="mt-8 grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-6 gap-6">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-6 gap-6">
           {images.map((image, index) => (
             <div key={index} className="relative overflow-hidden aspect-auto">
               <Image
