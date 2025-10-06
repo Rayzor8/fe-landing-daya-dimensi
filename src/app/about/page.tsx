@@ -1,4 +1,5 @@
 import AboutBanner from "@/components/about/banner";
+import AboutClients from "@/components/about/clients";
 import AboutContent from "@/components/about/content";
 
 export default function About() {
@@ -6,6 +7,7 @@ export default function About() {
     <>
       <AboutBanner />
       <AboutContent />
+      <AboutClients />
     </>
   );
 }
