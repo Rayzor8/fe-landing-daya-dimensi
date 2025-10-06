@@ -1,20 +1,11 @@
+import AboutBanner from "@/components/about/banner";
+import AboutContent from "@/components/about/content";
+
 export default function About() {
   return (
-    <div className="relative ">
-      <div className="h-[700px] bg-cover bg-center bg-[url(/img/about/banner-about.png)]">
-        <div className="absolute inset-0 bg-black/40"></div>
-        <div className="relative h-full flex flex-col justify-end pb-40 px-6 lg:pl-24 lg:max-w-xl bg:transparent xl:bg-[#2F2A2A]">
-          <h1 className="text-5xl lg:text-6xl font-light text-white mb-4">
-           Force of Progress
-          </h1>
-          <p className="text-white/90 text-lg mb-8 font-light leading-relaxed">
-           Daya Dimensi Indonesia is a leadership consultant that supports organisations develop and deliver strategic programmes such as assessment centre, selection, learning, and personal & organisational transformation.
-          </p>
-        </div>
-      </div>
-
-
-      <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat at atque eum repudiandae sapiente, laboriosam hic ad numquam ex autem harum odio esse enim, praesentium debitis. Quia inventore vel laborum numquam debitis praesentium, sit aspernatur eligendi possimus odit totam consequatur perferendis libero explicabo, harum iure molestias neque! Quaerat debitis voluptatum quos repudiandae, porro earum accusamus exercitationem nulla ab! Provident nemo officiis odio molestiae, cupiditate voluptatibus minima quod dicta minus, voluptatem repellat fugiat adipisci eaque maiores culpa excepturi facilis praesentium amet ipsum error accusantium aperiam omnis! Veritatis reiciendis iste laborum distinctio atque, voluptatibus veniam fugiat id consequuntur cum nobis qui dolorem vitae nisi autem modi esse tempora recusandae consectetur explicabo. Repellendus numquam necessitatibus perferendis fugit veritatis reiciendis repudiandae, ducimus sunt adipisci commodi rem perspiciatis voluptatibus iste officia, ad, similique repellat velit temporibus amet assumenda facilis id quos? Tempora explicabo minus inventore laboriosam nemo aut porro excepturi reprehenderit exercitationem quidem, consequuntur voluptatibus natus voluptatem vero expedita repellat, mollitia similique maxime quam! Dicta voluptate placeat, magnam nesciunt dolores earum facilis minima quam amet veniam accusamus nisi, eos alias deserunt sapiente consectetur! Officiis ducimus eum quibusdam possimus magni explicabo similique nobis iure adipisci enim amet quidem asperiores velit veritatis maiores totam ratione, sapiente praesentium animi, eaque quam iusto quos minus dolor? Optio earum similique quis vel? Harum expedita exercitationem, eveniet eligendi veniam ullam soluta consequatur voluptatum labore eos voluptatem praesentium, maxime provident enim libero! Ab saepe blanditiis aspernatur autem non? Voluptate dicta, quae fugiat deleniti aperiam veritatis provident nostrum magni esse distinctio aut, quos voluptatibus harum sint quis tempora molestiae sit non? Ab repellat iusto quia ipsa dolorum cupiditate eum excepturi magni culpa. Cum velit voluptatem ex exercitationem officiis temporibus. Porro cum ipsam voluptates beatae veritatis! Ea hic recusandae maiores totam necessitatibus debitis et ab similique consequatur quae nobis distinctio, accusamus eveniet qui dolorem assumenda! Ex delectus error ipsa ipsam, deserunt sit animi tempora voluptatum vitae unde? Et aliquid unde illum ipsam eum voluptates officia nihil laborum soluta error? Ad totam nisi aperiam deleniti quidem accusantium iure obcaecati aliquam est eum qui dicta vel facilis saepe voluptatem dolor iusto quis, placeat cum explicabo et! Quia obcaecati veniam quisquam consequuntur voluptate ullam alias! Facere recusandae nam deleniti adipisci tempore magni suscipit? Totam qui laboriosam suscipit illo alias asperiores nisi sed dolores rerum iste natus unde quod eius dolorum nulla cupiditate, quam cumque placeat molestias recusandae aperiam repellendus error? Explicabo nesciunt quod sint laborum blanditiis in tenetur quidem nihil fugit tempora dolorem libero quasi provident, fugiat doloribus vitae dignissimos aliquid numquam, cumque pariatur minima, ab modi temporibus sapiente? Illum, soluta! Nihil laborum repudiandae harum temporibus doloribus quisquam doloremque incidunt, officia eveniet vitae perferendis iusto qui quis pariatur provident cupiditate reprehenderit voluptatem eius? Recusandae modi placeat accusantium quia atque aspernatur temporibus rem iure illo nostrum tempore vitae nihil minima corporis a, maxime deleniti? Minus minima, odit ducimus dolore quasi placeat obcaecati quidem dolores praesentium sapiente aperiam facere tempore rerum ea maxime adipisci. Eum, obcaecati. Molestias laboriosam quia asperiores id vero sequi ipsam harum nesciunt, hic recusandae! Temporibus!</div>
-    </div>
+    <>
+      <AboutBanner />
+      <AboutContent />
+    </>
   );
 }

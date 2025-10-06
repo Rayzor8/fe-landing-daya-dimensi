@@ -1,6 +1,7 @@
 import { MoveRight } from "lucide-react";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import NavigationButton from "../custom-button/navigation-button";
 
 export default function HomeActivities() {
   const activities = [
@@ -30,9 +31,7 @@ export default function HomeActivities() {
     <div className="wrapper">
       <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10">
         <h2 className="text-var-lg mb-2">Upcoming Activities</h2>
-        <Button variant="ghost" className="text-red-primary" >
-          VIEW ALL <MoveRight />
-        </Button>
+        <NavigationButton>VIEW ALL</NavigationButton>
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3  gap-0 ">

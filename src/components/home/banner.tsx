@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function HomeBanner() {
   return (
@@ -18,8 +19,9 @@ export default function HomeBanner() {
             and teams to become exceptional leaders.
           </p>
           <div className="flex gap-4">
-            <Button className="cursor-pointer px-6 py-3 bg-transparent border border-white text-white hover:bg-white hover:text-gray-900 transition-colors text-sm">
-              LEARN MORE ABOUT US
+            
+            <Button asChild className="cursor-pointer px-6 py-3 bg-transparent border border-white text-white hover:bg-white hover:text-gray-900 transition-colors text-sm">
+               <Link href="/about">LEARN MORE ABOUT US</Link>
             </Button>
             <Button className="cursor-pointer px-6 py-3 bg-transparent border border-white text-white hover:bg-white hover:text-gray-900 transition-colors text-sm">
               CONTACT US

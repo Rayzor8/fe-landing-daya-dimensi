@@ -3,10 +3,11 @@ import React, { useState, useEffect } from "react";
 import {  Menu, X } from "lucide-react";
 import { Button } from "../ui/button";
 import Link from "next/link";
-
+import { usePathname } from 'next/navigation';  
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -67,11 +68,11 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`text-sm font-light transition-colors whitespace-nowrap cursor-pointer ${
+                className={`text-sm  transition-colors whitespace-nowrap cursor-pointer ${
                   isScrolled
                     ? "text-gray-700 hover:text-red-600"
                     : "text-white hover:text-red-300"
-                }`}
+                } ${pathname === item.href ? "font-bold" : "font-light"}`}
               >
                 {item.name}
               </Link>
